@@ -1,0 +1,40 @@
+1. We Must Create the Raw file as per Digital forencics Rules.
+
+2. To create the Raw file, Open a Terminal (Ctrl + T). 
+
+3. Attach the pendrive or HDD from which you have to carve the data. 
+
+4. Use the mount command to find the device id which looks like (/dev/sdb1).
+
+5. Once You have the Device id then create the image of the pendrive/HDD.
+
+6. To procede further we have to be a ROOT user so we must use command
+		
+		$sudo -i
+	
+   and then type the password to gain the root access.
+
+6. Then To create the image use the command 
+
+		#dd if=/dev/sdb1 of=/home/himanshu/raw
+
+   It will take time depending upon the size of the pendrive/HDD.
+   *Replace himanshu with the Name of the user.
+
+7. Once the raw file is created then we must change the owner and the user of the file as the owner and the user is ROOT. To change it user  command.
+	
+		#chown himanshu:himanshu raw
+
+   *Replace himanshu with the Username and Groupname i.e 
+		
+		#chown username:groupname raw
+
+   *RAW is the Filename here.
+
+8. Then The RAW file will be ready to use.
+
+9. Place the RAW file in the same directory of the project.
+
+10. Now Read HOW TO INSTALL.
+
+    
