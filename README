@@ -1,2 +1,6 @@
 First you must Read 1. How to create raw file
-Then Proceed to 2. How to install
+Then Proceed to     2. How to install
+
+This Project helps to Carve (Extract) the deleted data by using Header/Footer Carving Concept and runs on Linux Platform. 
+We have to create a disk image from where we have to extract the data and then perform carving on that disk. 
+I have worked on JPEG, GIF, PDF file formats.
